@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 137231468388813500, guid: a48ad03768e25b44c8a0ac63f474af9c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 170431394300573192, guid: a48ad03768e25b44c8a0ac63f474af9c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -604,6 +608,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1427363870219497882, guid: f6c879a110c2169439ba6fa3776c6f0d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367887235263105194, guid: f6c879a110c2169439ba6fa3776c6f0d, type: 3}
+      propertyPath: damageInterval
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5537101083841059195, guid: f6c879a110c2169439ba6fa3776c6f0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.6
@@ -650,7 +662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8923377422478688453, guid: f6c879a110c2169439ba6fa3776c6f0d, type: 3}
       propertyPath: m_BodyType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8923377422478688453, guid: f6c879a110c2169439ba6fa3776c6f0d, type: 3}
       propertyPath: m_GravityScale
