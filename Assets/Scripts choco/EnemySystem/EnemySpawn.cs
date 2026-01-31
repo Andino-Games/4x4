@@ -18,4 +18,6 @@ public class EnemySpawn : MonoBehaviour
         Vector2 spawnPos = (Vector2)player.position + Random.insideUnitCircle.normalized * spawnRadius;
         enemy.transform.position = spawnPos;
     }
+
+
 }

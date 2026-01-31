@@ -5,7 +5,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public float maxHealth;
     public float currentHealth;
-    
+    public GameObject dropItemPrefab;
 
     private void Start()
     {
@@ -42,6 +42,11 @@ public class EnemyHealth : MonoBehaviour
     {
         EventManager.Instance.EnemyDie(gameObject);
         Debug.Log("Enemy has died.");
-        //this.gameObject.SetActive(false);
+        SpawnDrop();
+    }
+
+    private void SpawnDrop()
+    {
+       Instantiate(dropItemPrefab, transform.position, Quaternion.identity);
     }
 }
