@@ -1,41 +1,52 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-  [SerializeField]private float maxHealth = 100f;
-  [SerializeField]private float currentHealth;
+    // Las referencias pueden ser asignadas desde el Inspector.
+    public Slider healthBar;
+    public Health playerHealth;
 
-    private void OnEnable()
-    {
-        EventManager.Instance.OnDamageTaken += TakeDamage;
-    }
+    // Control para no spamear warnings cada frame si falta una referencia.
+    private bool _warnedMissingReference;
 
-    private void OnDisable()
+    private void Awake()
     {
-        EventManager.Instance.OnDamageTaken -= TakeDamage;
-    }
-
-    private void Start()
-    {
-        currentHealth = maxHealth;
-    }
-
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-        Debug.Log("Player Health: " + currentHealth);
-        if (currentHealth <= 0)
+        // Intentar asignar automáticamente si no se han asignado desde el inspector.
+        if (healthBar == null)
         {
-            Die();
+            healthBar = GetComponent<Slider>() ?? GetComponentInChildren<Slider>();
+        }
+
+        if (playerHealth == null)
+        {
+            playerHealth = GetComponent<Health>() ?? GetComponentInParent<Health>() ?? FindFirstObjectByType<Health>();
         }
     }
 
-    private void Die()
+    private void Update()
     {
-        Debug.Log("Player Died!");
-        // Add death logic here (e.g., respawn, game over screen)
-    }
+        // Comprobar null para evitar NullReferenceException.
+        if (healthBar == null || playerHealth == null)
+        {
+            if (!_warnedMissingReference)
+            {
+                Debug.LogWarning($"HealthBar: referencia(s) faltante(s). healthBar={(healthBar == null)}, playerHealth={(playerHealth == null)}", this);
+                _warnedMissingReference = true;
+            }
+            return;
+        }
 
-   
+        // Proteger contra división por cero y asegurar punto flotante.
+        float maxHealth = playerHealth.maxHealth;
+        float currentHealth = playerHealth.currentHealth;
+
+        float normalized = 0f;
+        if (maxHealth > 0f)
+        {
+            normalized = currentHealth / maxHealth;
+        }
+
+        healthBar.value = Mathf.Clamp01(normalized);
+    }
 }
