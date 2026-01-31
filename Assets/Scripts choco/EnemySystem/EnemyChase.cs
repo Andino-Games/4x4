@@ -11,6 +11,7 @@ public class EnemyChase : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void FixedUpdate()

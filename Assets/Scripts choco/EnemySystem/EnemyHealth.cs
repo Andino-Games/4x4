@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
     public float maxHealth;
     public float currentHealth;
+    
 
     private void Start()
     {
@@ -19,7 +21,10 @@ public class EnemyHealth : MonoBehaviour
     }
     private void OnDisable()
     {
-        EventManager.Instance.OnEnemyDamaged -= TakeDamage;
+        if (EventManager.Instance != null)
+        {
+            EventManager.Instance.OnEnemyDamaged -= TakeDamage;
+        }
     }
 
     public void TakeDamage(int damage)
@@ -29,12 +34,13 @@ public class EnemyHealth : MonoBehaviour
         Debug.Log("Player Health: " + currentHealth);
         if (currentHealth <= 0)
         {
-            Die();
+            EnemyDie();
         }
     }
 
-    private void Die()
+    private void EnemyDie()
     {
+        EventManager.Instance.EnemyDie(gameObject);
         Debug.Log("Enemy has died.");
         //this.gameObject.SetActive(false);
     }
