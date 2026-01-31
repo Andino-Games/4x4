@@ -614,7 +614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3367887235263105194, guid: f6c879a110c2169439ba6fa3776c6f0d, type: 3}
       propertyPath: damageInterval
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5537101083841059195, guid: f6c879a110c2169439ba6fa3776c6f0d, type: 3}
       propertyPath: m_LocalPosition.x

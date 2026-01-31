@@ -4,20 +4,23 @@ public class Health : MonoBehaviour
 {
   public float maxHealth = 100f;
   public float currentHealth;
-
-    private void OnEnable()
-    {
-        EventManager.Instance.OnDamageTaken += TakeDamage;
-    }
-
-    private void OnDisable()
-    {
-        EventManager.Instance.OnDamageTaken -= TakeDamage;
-    }
+     
 
     private void Start()
     {
+        if (EventManager.Instance != null)
+        {
+            EventManager.Instance.OnDamageTaken += TakeDamage;
+        }
+        else
+        {
+            Debug.LogWarning("EventManager.Instance es null en Health OnEnable. No se puede suscribir al evento.");
+        }
         currentHealth = maxHealth;
+    }
+    private void OnDisable()
+    {
+        EventManager.Instance.OnDamageTaken -= TakeDamage;
     }
 
     public void TakeDamage(int damage)
@@ -33,8 +36,8 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Player Died!");
-        // Add death logic here (e.g., respawn, game over screen)
+        Debug.Log("Player has died.");
+        //this.gameObject.SetActive(false);
     }
 
    
