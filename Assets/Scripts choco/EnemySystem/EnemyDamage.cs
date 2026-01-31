@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class EnemyDamage : MonoBehaviour
 {
     public int damage = 10;
     public float damageInterval = 3f;
@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             playerInRange = true;
-            damageTimer = 0;
+            damageTimer = damageInterval;
         }
     }
 

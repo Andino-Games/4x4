@@ -1,10 +1,12 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
     public static EventManager Instance;
     public event Action<int> OnDamageTaken;
+    public event Action<int> OnEnemyDamaged;
 
     private void Awake()
     {
@@ -22,6 +24,11 @@ public class EventManager : MonoBehaviour
     public void DamageTaken(int damage)
     {
         OnDamageTaken?.Invoke(damage);
+    }
+
+    public void EnemyDamageTaken(int damage)
+    {
+        OnEnemyDamaged?.Invoke(damage);
     }
 
 }
