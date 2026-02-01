@@ -1,14 +1,40 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Stats : MonoBehaviour
 {
-      private int XP;
-      
+    [Header("XP")]
+    public int level = 1;
+    public int currentXP = 0;
+    public int requiredXP = 10;
 
-    public void AddXP(int value)
+    [Header("UI")]
+    [SerializeField] private Image xpBar;
+
+    public void AddXP(int amount)
     {
-        XP += value;
-        Debug.Log("XP: " + XP);
+        currentXP += amount;
+
+        if (currentXP >= requiredXP)
+        {
+            LevelUp();
+        }
+
+        UpdateXPBar();
     }
 
+    void LevelUp()
+    {
+        currentXP -= requiredXP; 
+        level++;
+
+        requiredXP = Mathf.RoundToInt(requiredXP * 1.5f); 
+
+        Debug.Log("Nivel actual: " + level);
+    }
+
+    void UpdateXPBar()
+    {
+        xpBar.fillAmount = (float)currentXP / requiredXP;
+    }
 }
