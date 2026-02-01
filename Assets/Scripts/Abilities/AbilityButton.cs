@@ -31,16 +31,11 @@ namespace Abilities
 
         public void OnClick()
         {
-            Debug.Log($"AbilityButton: Click detectado en {gameObject.name}");
-            var manager = FindFirstObjectByType<AbilityManager>();
+            var manager = FindAnyObjectByType<AbilityManager>();
 
             if (manager != null)
             {
                 manager.SelectAbility(_actualData);
-            }
-            else
-            {
-                Debug.LogError("AbilityButton: No se encontró el AbilityManager en la escena.");
             }
         }
     }

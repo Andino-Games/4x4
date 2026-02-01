@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10f462073ddd41bab08e4cf141412d3f, type: 3}
-  m_Name: RingShotAttack
+  m_Name: IncresedLife
   m_EditorClassIdentifier: Assembly-CSharp::Abilities.AbilityData
-  abilityName: Ring Shot Attack
-  abilityDescription: el ataque de bolitas
-  abilityIcon: {fileID: -5140137869014926905, guid: 20230b527a8bda54cbdcdd86f431122e, type: 3}
-  abilityPrefab: {fileID: 1232340824299887176, guid: 0a2ab28a627840042898ce698eb1585f, type: 3}
+  abilityName: Increased Life
+  abilityDescription: la vida sube
+  abilityIcon: {fileID: -6457896997124965141, guid: c40f01f6de8cab741ac69af10740b660, type: 3}
+  abilityPrefab: {fileID: 2881987517169992171, guid: 3a67467828b15ce47a8390355caeaa92, type: 3}

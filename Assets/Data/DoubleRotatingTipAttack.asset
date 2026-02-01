@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f462073ddd41bab08e4cf141412d3f, type: 3}
   m_Name: DoubleRotatingTipAttack
   m_EditorClassIdentifier: Assembly-CSharp::Abilities.AbilityData
-  abilityName: DoubleRotatingTipAttack
+  abilityName: Double Rotating Tip Attack
   abilityDescription: este es el ataque de 4
-  abilityIcon: {fileID: 0}
-  abilityPrefab: {fileID: 839150516624296926, guid: 3cd9a4aa438b2594085b440740bd87ee, type: 3}
+  abilityIcon: {fileID: -935562341132795627, guid: f163c89dec01fb1489f6a491a8cb4dd3, type: 3}
+  abilityPrefab: {fileID: 160222255393718654, guid: bf07c13670544994f907db952fa3ae9f, type: 3}
