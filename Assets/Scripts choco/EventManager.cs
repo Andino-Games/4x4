@@ -7,6 +7,7 @@ public class EventManager : MonoBehaviour
     public static EventManager Instance;
     public event Action<int> OnDamageTaken;
     public event Action<GameObject> OnEnemyDied;
+    public event Action OnPlayerDied;
 
     [Header("Ability Events")]
     private int innecesaryValue;
@@ -30,6 +31,11 @@ public class EventManager : MonoBehaviour
     public void DamageTaken(int damage)
     {
         OnDamageTaken?.Invoke(damage);
+    }
+
+    public void PlayerDead()
+    {
+        OnPlayerDied?.Invoke();
     }
 
     public void EnemyDie(GameObject enemy)

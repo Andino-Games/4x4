@@ -50,6 +50,7 @@ public class Health : MonoBehaviour
         {
             Debug.Log("Player has died.");
             this.gameObject.SetActive(false);
+            EventManager.Instance.PlayerDead();
         }
         
     }
