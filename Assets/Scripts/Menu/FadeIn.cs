@@ -7,11 +7,17 @@ using UnityEngine;
 
     private void Awake()
     {
+        
+        PlayAnim();
+    }
+
+    private void Start()
+    {
         this.gameObject.SetActive(true);
     }
     public void PlayAnim()
     {
-        anim.Play("FadeInAnim");
+        anim.SetTrigger("FadeIn");
     }
     public void EndAnim()
     {

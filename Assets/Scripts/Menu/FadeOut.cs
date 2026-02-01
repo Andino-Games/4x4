@@ -12,10 +12,10 @@ public class FadeOut : MonoBehaviour
     public void PlayAnim()
     {
         this.gameObject.SetActive(true);
-        anim.Play("FadeOutAnim");
+        anim.SetTrigger("FadeOut");
     }   
 
-    public void EndAnim()
+    public void StartRoom()
     {
         mainMenu.StartGame();
     }

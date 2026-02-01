@@ -1226,7 +1226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1193103129
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1294,7 +1294,7 @@ Animator:
   m_GameObject: {fileID: 1193103128}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 93d8ab1b66b176b48a0420f205dfeb50, type: 2}
+  m_Controller: {fileID: 9100000, guid: dfd38f68b70aaf841971b1b71a2043a9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1318,7 +1318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a76b5ef7c9b156742ae14f6ae41b84f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeOut
-  mainMenu: {fileID: 0}
+  mainMenu: {fileID: 922502138}
   anim: {fileID: 1193103132}
 --- !u!1 &1193949865
 GameObject:
@@ -2187,7 +2187,7 @@ Animator:
   m_GameObject: {fileID: 1987510446}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9b8186e33c4116c41a9d9e3270daa00a, type: 2}
+  m_Controller: {fileID: 9100000, guid: f6d80500ccb77224bbccc09ce94f686b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
