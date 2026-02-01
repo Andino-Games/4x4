@@ -5,11 +5,19 @@ public class EnemySpawn : MonoBehaviour
     public EnemyPool enemyPool;
     public Transform player;
     public float spawnRadius = 20f;
-    public float spawnInterval = 5f;
-
+    public float baseSpawnInterval = 1f;
+    public float minSpawnInterval = 0.2f;
+    public float difficultyGrowthRate = 0.05f;
+    public float difficulty = 1;
+    
     private void Start()
     {
-        InvokeRepeating(nameof(SpawnEnemy), 1f, spawnInterval);  
+        InvokeRepeating(nameof(SpawnEnemy), 1f, baseSpawnInterval);  
+    }
+    private void Update()
+    {
+        float currentInterval = Mathf.Max(minSpawnInterval, baseSpawnInterval/ difficulty);
+        difficulty += difficultyGrowthRate * Time.deltaTime;
     }
 
     public void SpawnEnemy()
