@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class DropItem : MonoBehaviour
 {
@@ -6,14 +8,16 @@ public class DropItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            Stats stats = other.gameObject.GetComponent<Stats>();
-            if(stats != null)
+            Stats stats = other.GetComponent<Stats>();
+
+            if (stats != null)
             {
                 stats.AddXP(value);
             }
-            Destroy(this.gameObject);
+
+            Destroy(gameObject);
         }
     }
 }
