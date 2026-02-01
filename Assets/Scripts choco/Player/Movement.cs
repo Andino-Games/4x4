@@ -11,11 +11,22 @@ public class Movement : MonoBehaviour
     {
          rb2d = GetComponent<Rigidbody2D>();
         pCharacter = GetComponent<PCharacter>();
+        EventManager.Instance.OnBetterSpeedActivated += ActivateBetterSpeed;
+
+    }
+    private void OnDisable()
+    {
+        EventManager.Instance.OnBetterSpeedActivated -= ActivateBetterSpeed;
     }
 
     private void FixedUpdate()
     {
         rb2d.linearVelocity = pCharacter.mov*speed;
+    }
+
+    public void ActivateBetterSpeed()
+    {
+        speed = 10f;
     }
 
 

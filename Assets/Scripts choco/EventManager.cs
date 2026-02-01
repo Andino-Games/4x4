@@ -8,6 +8,12 @@ public class EventManager : MonoBehaviour
     public event Action<int> OnDamageTaken;
     public event Action<GameObject> OnEnemyDied;
 
+    [Header("Ability Events")]
+    private int innecesaryValue;
+    public event Action OnMaxHealthIncreased;
+    public event Action OnRespawnAvailable;
+    public event Action OnBetterSpeedActivated;
+
     private void Awake()
     {
         if (Instance == null)
@@ -30,4 +36,20 @@ public class EventManager : MonoBehaviour
     {
         OnEnemyDied?.Invoke(enemy);
     }
+
+    #region Ability Events
+    public void MaxHealthIncreased()
+    {
+        OnMaxHealthIncreased?.Invoke();
+    }
+    public void RespawnAvailable()
+    {
+        OnRespawnAvailable?.Invoke();
+    }
+    public void BetterSpeedActivated()
+    {
+        OnBetterSpeedActivated?.Invoke();
+    }
+
+    #endregion
 }
