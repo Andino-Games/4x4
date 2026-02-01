@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8902783441322174410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2423807996124096883}
+  - component: {fileID: 5149398060386221011}
+  - component: {fileID: 7870505411828235229}
+  m_Layer: 0
+  m_Name: MANAGERS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2423807996124096883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8902783441322174410}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 898.9178, y: 553.84235, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5149398060386221011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8902783441322174410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1ece65821647689ff5fb2888f4916d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  currentState: 0
+  abilityManager: {fileID: 7870505411828235229}
+--- !u!114 &7870505411828235229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8902783441322174410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e44d8d852040089bdf4f38a539c4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Abilities.AbilityManager
+  poolAbilities:
+  - {fileID: 11400000, guid: e5e74437c6b9c264896e5e3da188e438, type: 2}
+  - {fileID: 11400000, guid: 69820fea3badbd943afdabf11073f662, type: 2}
+  - {fileID: 11400000, guid: ed8298c0b667fe54492cf50f1c21f605, type: 2}
+  - {fileID: 11400000, guid: 1fd3235c80c8fca4987d5de73757d09c, type: 2}
+  - {fileID: 11400000, guid: deec2d6b4233a2f4e95b401e31edda9f, type: 2}
+  - {fileID: 11400000, guid: 27718457ae1228944ac34e954f3baca8, type: 2}
+  - {fileID: 11400000, guid: e9cf98c5601445f429ebea5042a1934c, type: 2}
+  abilitiesObtained: []
+  playerTransform: {fileID: 0}
+  abilitiesPanel: {fileID: 0}
+  UIButtons:
+  - {fileID: 0}
+  - {fileID: 0}

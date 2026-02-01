@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f462073ddd41bab08e4cf141412d3f, type: 3}
   m_Name: BasicAttack
   m_EditorClassIdentifier: Assembly-CSharp::Abilities.AbilityData
-  abilityName: BasicAttack
+  abilityName: Basic Attack
   abilityDescription: "esta monda es una descripci\xF3n de ataque basico"
   abilityIcon: {fileID: 0}
-  abilityPrefab: {fileID: 6323711993405162095, guid: 5d367819e00190649bf7ac3d8a51dcca, type: 3}
+  abilityPrefab: {fileID: 8945986762766502198, guid: 5d367819e00190649bf7ac3d8a51dcca, type: 3}
