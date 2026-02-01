@@ -1,3 +1,4 @@
+using Abilities;
 using UnityEngine;
 
 public enum GameState {Playing, LevelUp, GameOver}
@@ -5,13 +6,19 @@ public class GameManager : MonoBehaviour
 {
     public static  GameManager Instance;
     public GameState currentState;
+    public AbilityManager abilityManager;
 
     private void Awake() => Instance = this;
+    
+    private void Start()
+    {
+        ChangeState(GameState.LevelUp);
+    }
     
     public void ChangeState(GameState newState)
     {
         currentState = newState;
-
+        
         switch (currentState)
         {
             case GameState.Playing:
@@ -21,6 +28,7 @@ public class GameManager : MonoBehaviour
             
             case GameState.LevelUp:
                 Time.timeScale = 0;
+                abilityManager.ShowAbilities();
                 Debug.Log(currentState);
                 break;
             
