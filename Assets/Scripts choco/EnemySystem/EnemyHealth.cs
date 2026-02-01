@@ -7,24 +7,10 @@ public class EnemyHealth : MonoBehaviour
     public float currentHealth;
     public GameObject dropItemPrefab;
 
-    private void Start()
+    private void OnEnable()
     {
-        if (EventManager.Instance != null)
-        {
-            EventManager.Instance.OnEnemyDamaged += TakeDamage;
-        }
-        else
-        {
-            Debug.LogWarning("EventManager.Instance es null en EnemyHealth OnEnable. No se puede suscribir al evento.");
-        }
+       
         currentHealth = maxHealth;
-    }
-    private void OnDisable()
-    {
-        if (EventManager.Instance != null)
-        {
-            EventManager.Instance.OnEnemyDamaged -= TakeDamage;
-        }
     }
 
     public void TakeDamage(int damage)

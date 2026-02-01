@@ -4,11 +4,11 @@ public class DropItem : MonoBehaviour
 {
     public int value = 1;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Player"))
         {
-            Stats stats = collision.gameObject.GetComponent<Stats>();
+            Stats stats = other.gameObject.GetComponent<Stats>();
             if(stats != null)
             {
                 stats.AddXP(value);

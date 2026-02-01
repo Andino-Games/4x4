@@ -20,7 +20,9 @@ namespace Attack.AttackType
         {
             if (other.CompareTag("Enemy"))
             {
-                Debug.Log("dele daño");
+
+                other.GetComponent<EnemyHealth>().TakeDamage(damage);
+                Debug.Log("Enemy hit with double rotating attack for " + damage + " damage.");
             }
         }
     }

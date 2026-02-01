@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 5864014068185908893}
   m_Layer: 0
   m_Name: Enemy2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -280,7 +280,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -327,8 +327,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0144f9d3c9fdc8446b3dffe10d81c921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  maxHealth: 50
+  maxHealth: 10
   currentHealth: 0
+  dropItemPrefab: {fileID: 5825600151974820404, guid: cf691b7cdcfb8174c840fb474eb06ac4, type: 3}
 --- !u!114 &5864014068185908893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,8 +342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa3cfccfde78d640ae45e6900d382c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealthBar
-  healthBar: {fileID: 0}
-  enemyHealth: {fileID: 0}
+  healthBar: {fileID: 3077810422829763776}
+  enemyHealth: {fileID: 5646928897565245081}
 --- !u!1 &311429508105295912
 GameObject:
   m_ObjectHideFlags: 0
