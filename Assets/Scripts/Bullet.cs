@@ -6,7 +6,8 @@ public class Bullet : MonoBehaviour
 {
         public float speed = 10f;
         public float lifetime = 3f;
-        private float _timer;
+    public int damage = 10;
+    private float _timer;
         private IObjectPool<Bullet>  _myPool;
         
         public void SetPool(IObjectPool<Bullet> pool) => _myPool = pool;
@@ -33,8 +34,9 @@ public class Bullet : MonoBehaviour
         {
                 if (other.CompareTag("Enemy"))
                 {
-                        //Daño aca
-                        Deactivate();
+                    other.GetComponent<EnemyHealth>().TakeDamage(damage);
+                    Debug.Log("Enemy hit with basic attack for " + damage + " damage.");
+            Deactivate();
                 }
         }
 }

@@ -6,10 +6,7 @@ namespace Attack.AttackType
     {
         [Header("Spin Settings")]
         public float rotationdSpeed = 200f;
-        public override void ExecuteAttack()
-        {
-            
-        }
+        
 
         public override void Update()
         {
@@ -20,9 +17,13 @@ namespace Attack.AttackType
         {
             if (other.CompareTag("Enemy"))
             {
-                Debug.Log("dele daño");
+                other.GetComponent<EnemyHealth>().TakeDamage(damage);
+                Debug.Log("Enemy hit with basic attack for " + damage + " damage.");
             }
         }
+        public override void ExecuteAttack()
+        {
 
+        }
     }
 }
