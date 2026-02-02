@@ -12,6 +12,9 @@ namespace Abilities
         [Header("UI References")] 
         public GameObject abilitiesPanel;
         public AbilityButton[] UIButtons;
+        public UnityEngine.UI.Image[] obtainedAbilityIcons;
+
+
 
         public void ShowAbilities()
         {
@@ -57,6 +60,17 @@ namespace Abilities
         {
             Debug.Log($"AbilityManager: Seleccionando habilidad: {ability.abilityName}");
             abilitiesObtained.Add(ability);
+
+            // Update HUD Icons
+            int index = abilitiesObtained.Count - 1;
+            if (obtainedAbilityIcons != null && index < obtainedAbilityIcons.Length)
+            {
+                if (obtainedAbilityIcons[index] != null)
+                {
+                    obtainedAbilityIcons[index].sprite = ability.abilityIcon;
+                    obtainedAbilityIcons[index].gameObject.SetActive(true);
+                }
+            }
 
             if (playerTransform != null)
             {

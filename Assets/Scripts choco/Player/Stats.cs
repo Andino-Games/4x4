@@ -17,6 +17,7 @@ public class Stats : MonoBehaviour
 
         if (currentXP >= requiredXP)
         {
+            GameManager.Instance.ChangeState(GameState.LevelUp);
             LevelUp();
         }
 
