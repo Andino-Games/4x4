@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     
     private void Start()
     {
-        ChangeState(GameState.LevelUp);
+        ChangeState(GameState.Playing);
     }
     
     public void ChangeState(GameState newState)
