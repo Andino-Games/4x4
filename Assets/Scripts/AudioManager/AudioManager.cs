@@ -37,10 +37,11 @@ public class AudioManager : MonoBehaviour
         switch (scene.buildIndex)
         {
             case 0:
+            case 1:
                 PlayMusic(MenuMusic);
                 break;
 
-            case 1:
+            case 2:
                 PlayMusic(gameplayMusic);
                 break;
         }
