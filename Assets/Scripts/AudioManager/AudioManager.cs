@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class AudioManager : MonoBehaviour
 
     [Header("Music")]
     public AudioSource musicSource;
+    public AudioClip gameplayMusic;
+    public AudioClip MenuMusic;
 
     private void Awake()
     {
@@ -17,6 +20,30 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+
+    }
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        switch (scene.buildIndex)
+        {
+            case 0:
+            case 1:
+                PlayMusic(MenuMusic);
+                break;
+
+            case 2:
+                PlayMusic(gameplayMusic);
+                break;
         }
     }
 

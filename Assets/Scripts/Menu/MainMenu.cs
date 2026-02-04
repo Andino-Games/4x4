@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject mainMenuPanel;
     public GameObject creditsPanel;
-    public AudioClip menuAudio;
+    
 
     private void Awake()
     {
@@ -15,10 +15,6 @@ public class MainMenu : MonoBehaviour
         creditsPanel.SetActive(false);
     }
 
-    private void Start()
-    {
-        AudioManager.Instance.PlayMusic(menuAudio);
-    }
     public void StartGame()
     {
         SceneManager.LoadScene(1);
