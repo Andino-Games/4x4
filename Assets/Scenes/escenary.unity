@@ -269,7 +269,7 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7847113600465048615, guid: c8aaf042a2acb4c7c8f423e638c3c371, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7607843}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1203,7 +1203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1201244114842472607, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
       propertyPath: maxHealth
-      value: 100
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 1300753409658806456, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
       propertyPath: m_SortingOrder
@@ -1225,6 +1225,10 @@ PrefabInstance:
       propertyPath: levelText
       value: 
       objectReference: {fileID: 1247024178}
+    - target: {fileID: 2196618249314954704, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
+      propertyPath: levelsPerAbility
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5756184762704125538, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.24
@@ -6445,7 +6449,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5595684148951531208, guid: f1981d99a9279461185c48d7aaf94b30, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6783,7 +6787,7 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1318313425296266196, guid: c8aaf042a2acb4c7c8f423e638c3c371, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.79607844}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7136,7 +7140,7 @@ SpriteRenderer:
   m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4778053447280930362, guid: 394fdd9d1959b4df99babe161b38ca2a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.44313726}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
