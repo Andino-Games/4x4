@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FadeOut : MonoBehaviour
 {
-    public MainMenu mainMenu;
+    private int targetSceneIndex = -1;   
     public Animator anim;
 
     private void Start()
@@ -15,8 +15,24 @@ public class FadeOut : MonoBehaviour
         anim.SetTrigger("FadeOut");
     }   
 
-    public void StartRoom()
+    public void LoadTargetScene(int sceneIndex)
     {
-        mainMenu.StartGame();
+        targetSceneIndex = sceneIndex;
+        PlayAnim();
     }
+
+    public void EndAnim()
+    {
+        if (targetSceneIndex >= 0)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(targetSceneIndex);
+            Debug.Log("Loading scene: " + targetSceneIndex);
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+
+
 }

@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject mainMenuPanel;
     public GameObject creditsPanel;
-    
+    public FadeOut fadeOut;
 
     private void Awake()
     {
@@ -17,7 +17,15 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        if (fadeOut != null)
+        {
+            fadeOut.LoadTargetScene(1);
+            Debug.Log("Starting game with fade out");
+        }
+        else
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 
     public void Credits()

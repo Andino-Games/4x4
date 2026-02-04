@@ -8,6 +8,7 @@ public class TutorialPanelManager : MonoBehaviour
     public Button previewButton;
     public Button nextButton;
     public Button startGame;
+    public FadeOut fadeOut;
 
     private int currentPanelIndex = 0;
 
@@ -16,11 +17,21 @@ public class TutorialPanelManager : MonoBehaviour
         UpdatePanelVisibility();
         previewButton.onClick.AddListener(ShowPreviousPanel);
         nextButton.onClick.AddListener(ShowNextPanel);
-        startGame.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(2));
+        if(fadeOut != null)
+        {
+            startGame.onClick.AddListener(() => fadeOut.LoadTargetScene(2));
+        }
+        else
+        {
+            startGame.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(2));
+        }
         startGame.gameObject.SetActive(false);
     }
     private void ShowPreviousPanel()
     {
+        if (tutorialPanels == null || tutorialPanels.Count == 0)
+            return;
+
         if (currentPanelIndex > 0)
         {
             currentPanelIndex--;
@@ -29,6 +40,9 @@ public class TutorialPanelManager : MonoBehaviour
     }
     private void ShowNextPanel()
     {
+        if (tutorialPanels == null || tutorialPanels.Count == 0)
+            return;
+
         if (currentPanelIndex < tutorialPanels.Count - 1)
         {
             currentPanelIndex++;
