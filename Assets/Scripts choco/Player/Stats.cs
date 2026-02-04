@@ -5,8 +5,12 @@ public class Stats : MonoBehaviour
 {
     [Header("XP")]
     public int level = 1;
+    [Tooltip("Cada cuantos niveles se permite elegir una habilidad")]
+    public int levelsPerAbility = 1;
+
     public int currentXP = 0;
     public int requiredXP = 10;
+    public TMPro.TextMeshProUGUI levelText;
 
     [Header("UI")]
     [SerializeField] private Image xpBar;
@@ -17,8 +21,13 @@ public class Stats : MonoBehaviour
 
         if (currentXP >= requiredXP)
         {
-            GameManager.Instance.ChangeState(GameState.LevelUp);
             LevelUp();
+            
+            // Solo pausar y mostrar habilidades si es múltiplo de levelsPerAbility
+            if (level % levelsPerAbility == 0)
+            {
+                GameManager.Instance.ChangeState(GameState.LevelUp);
+            }
         }
 
         UpdateXPBar();
@@ -37,5 +46,6 @@ public class Stats : MonoBehaviour
     void UpdateXPBar()
     {
         xpBar.fillAmount = (float)currentXP / requiredXP;
+        levelText.text = level.ToString();
     }
 }
