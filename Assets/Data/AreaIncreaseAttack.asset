@@ -15,4 +15,4 @@ MonoBehaviour:
   abilityName: Area Increase Attack
   abilityDescription: el ataque de los palitos grandes
   abilityIcon: {fileID: 6859867057943101888, guid: 70ae0b3196f561442872a809aa89766c, type: 3}
-  abilityPrefab: {fileID: 1308019937533726121, guid: 989a23dc925ad404fb33b9d1398c92a0, type: 3}
+  abilityPrefab: {fileID: 7481376262753287007, guid: c5c5cd083aa2e6b479818ceb5b156325, type: 3}
