@@ -7,4 +7,8 @@ public class RespawnAvailable : MonoBehaviour
     public void ActivateRespawn()
     {         EventManager.Instance.RespawnAvailable();
     }
+    private void OnEnable()
+    {
+        ActivateRespawn();
+    }
 }
