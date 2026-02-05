@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f462073ddd41bab08e4cf141412d3f, type: 3}
   m_Name: IncreasedSpeed
   m_EditorClassIdentifier: Assembly-CSharp::Abilities.AbilityData
-  abilityName: Incresed Speed
-  abilityDescription: sube la velocidad
+  abilityName: Transmisibilidad aumentada
+  abilityDescription: Aumenta la velocidad
   abilityIcon: {fileID: 7651519717346933007, guid: d5de7a01c85cd4b4eacff1fcf860172b, type: 3}
   abilityPrefab: {fileID: 6516486848757375920, guid: 9e95368bb839f0d48b95f81b6a8af162, type: 3}

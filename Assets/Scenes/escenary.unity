@@ -841,6 +841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BasicAttack
       objectReference: {fileID: 0}
+    - target: {fileID: 8945986762766502198, guid: 5d367819e00190649bf7ac3d8a51dcca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -992,7 +996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LEVEL
+  m_text: NIVEL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8586491d68693c5489d6695214a2fb34, type: 2}
   m_sharedMaterial: {fileID: 725549993721430282, guid: 8586491d68693c5489d6695214a2fb34, type: 2}
@@ -6945,6 +6949,38 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1514585829}
     - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
+      propertyPath: poolAbilities.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
+      propertyPath: 'poolAbilities.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e5e74437c6b9c264896e5e3da188e438, type: 2}
+    - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
+      propertyPath: 'poolAbilities.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 69820fea3badbd943afdabf11073f662, type: 2}
+    - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
+      propertyPath: 'poolAbilities.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: deec2d6b4233a2f4e95b401e31edda9f, type: 2}
+    - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
+      propertyPath: 'poolAbilities.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 27718457ae1228944ac34e954f3baca8, type: 2}
+    - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
+      propertyPath: 'poolAbilities.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e9cf98c5601445f429ebea5042a1934c, type: 2}
+    - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
+      propertyPath: 'poolAbilities.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: ed8298c0b667fe54492cf50f1c21f605, type: 2}
+    - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
+      propertyPath: 'poolAbilities.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 1fd3235c80c8fca4987d5de73757d09c, type: 2}
+    - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
       propertyPath: obtainedAbilityIcons.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -7509,6 +7545,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3689196055180859309, guid: 4ccec517429c35c45b59e81e6d9d7a01, type: 3}
+      propertyPath: m_text
+      value: NUEVO NIVEL
+      objectReference: {fileID: 0}
+    - target: {fileID: 3689196055180859309, guid: 4ccec517429c35c45b59e81e6d9d7a01, type: 3}
+      propertyPath: m_margin.z
+      value: 530.5611
+      objectReference: {fileID: 0}
     - target: {fileID: 7750496409899636665, guid: 4ccec517429c35c45b59e81e6d9d7a01, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7571,11 +7615,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750496409899636665, guid: 4ccec517429c35c45b59e81e6d9d7a01, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7750496409899636665, guid: 4ccec517429c35c45b59e81e6d9d7a01, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.82
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7750496409899636665, guid: 4ccec517429c35c45b59e81e6d9d7a01, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

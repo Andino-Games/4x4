@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f462073ddd41bab08e4cf141412d3f, type: 3}
   m_Name: RIngShotSpinAttack
   m_EditorClassIdentifier: Assembly-CSharp::Abilities.AbilityData
-  abilityName: Ring Shot Spin Attack
-  abilityDescription: Este es el ataque de caracol
+  abilityName: Espiral virionica
+  abilityDescription: Lanza un espiral de viriones cada cierto tiempo
   abilityIcon: {fileID: 4143874839339193428, guid: ac146fcce7f161a428b802a4dae72a1f, type: 3}
   abilityPrefab: {fileID: 4747467691982104085, guid: 0348b2ab5cab85f49a651940d0df1779, type: 3}

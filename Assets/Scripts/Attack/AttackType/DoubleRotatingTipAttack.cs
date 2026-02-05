@@ -6,10 +6,6 @@ namespace Attack.AttackType
     {
         [Header("Spin Settings")]
         public float rotationdSpeed = 200f;
-        public override void ExecuteAttack()
-        {
-            
-        }
 
         public override void Update()
         {
@@ -25,5 +21,11 @@ namespace Attack.AttackType
                 Debug.Log("Enemy hit with double rotating attack for " + damage + " damage.");
             }
         }
+
+        public override void ExecuteAttack()
+        {
+            
+        }
+
     }
 }

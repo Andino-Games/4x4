@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f462073ddd41bab08e4cf141412d3f, type: 3}
   m_Name: AreaIncreaseAttack
   m_EditorClassIdentifier: Assembly-CSharp::Abilities.AbilityData
-  abilityName: Area Increase Attack
-  abilityDescription: el ataque de los palitos grandes
+  abilityName: Doble espicula
+  abilityDescription: Duplica el numero de espiculas
   abilityIcon: {fileID: 6859867057943101888, guid: 70ae0b3196f561442872a809aa89766c, type: 3}
-  abilityPrefab: {fileID: 1308019937533726121, guid: 989a23dc925ad404fb33b9d1398c92a0, type: 3}
+  abilityPrefab: {fileID: 7481376262753287007, guid: c5c5cd083aa2e6b479818ceb5b156325, type: 3}

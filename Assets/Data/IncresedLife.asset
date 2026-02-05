@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f462073ddd41bab08e4cf141412d3f, type: 3}
   m_Name: IncresedLife
   m_EditorClassIdentifier: Assembly-CSharp::Abilities.AbilityData
-  abilityName: Increased Life
-  abilityDescription: la vida sube
+  abilityName: Variante potenciada
+  abilityDescription: Aumenta la cantidad de puntos de vida maximos
   abilityIcon: {fileID: -6457896997124965141, guid: c40f01f6de8cab741ac69af10740b660, type: 3}
   abilityPrefab: {fileID: 2881987517169992171, guid: 3a67467828b15ce47a8390355caeaa92, type: 3}
