@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f462073ddd41bab08e4cf141412d3f, type: 3}
   m_Name: Reespawn
   m_EditorClassIdentifier: Assembly-CSharp::Abilities.AbilityData
-  abilityName: Reespawn
-  abilityDescription: aqui se reespawnea
+  abilityName: Rebrote sistemico
+  abilityDescription: "Habilita la posibilidad de revivir despu\xE9s de perder todos
+    los puntos de vida"
   abilityIcon: {fileID: -4433336439582433587, guid: 7531d874dcf62c74b8e3adc403b7fc32, type: 3}
   abilityPrefab: {fileID: 7759158675440978525, guid: 67ef8a34ab6d15b47b059406a1be8d10, type: 3}

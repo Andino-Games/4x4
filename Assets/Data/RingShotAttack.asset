@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f462073ddd41bab08e4cf141412d3f, type: 3}
   m_Name: RingShotAttack
   m_EditorClassIdentifier: Assembly-CSharp::Abilities.AbilityData
-  abilityName: Ring Shot Attack
-  abilityDescription: el ataque de bolitas
+  abilityName: Anillo de viriones
+  abilityDescription: Lanza un anillo de viriones cada cierto tiempo
   abilityIcon: {fileID: -5140137869014926905, guid: 20230b527a8bda54cbdcdd86f431122e, type: 3}
   abilityPrefab: {fileID: 1232340824299887176, guid: 0a2ab28a627840042898ce698eb1585f, type: 3}

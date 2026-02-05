@@ -996,7 +996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LEVEL
+  m_text: NIVEL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8586491d68693c5489d6695214a2fb34, type: 2}
   m_sharedMaterial: {fileID: 725549993721430282, guid: 8586491d68693c5489d6695214a2fb34, type: 2}
@@ -7545,6 +7545,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3689196055180859309, guid: 4ccec517429c35c45b59e81e6d9d7a01, type: 3}
+      propertyPath: m_text
+      value: NUEVO NIVEL
+      objectReference: {fileID: 0}
+    - target: {fileID: 3689196055180859309, guid: 4ccec517429c35c45b59e81e6d9d7a01, type: 3}
+      propertyPath: m_margin.z
+      value: 530.5611
+      objectReference: {fileID: 0}
     - target: {fileID: 7750496409899636665, guid: 4ccec517429c35c45b59e81e6d9d7a01, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7607,11 +7615,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750496409899636665, guid: 4ccec517429c35c45b59e81e6d9d7a01, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7750496409899636665, guid: 4ccec517429c35c45b59e81e6d9d7a01, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.82
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7750496409899636665, guid: 4ccec517429c35c45b59e81e6d9d7a01, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
