@@ -46,8 +46,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPool
   enemyPrefab:
-  - {fileID: 170431394300573192, guid: cbfc1f4b54314f94c90ce2544f1904be, type: 3}
-  poolSize: 300
+  - {fileID: 1576889498035614054, guid: dacde8b6943ba69418524328dfc31395, type: 3}
+  - {fileID: 3048964565201239904, guid: b5b66453838c5ba419025aa2972e0582, type: 3}
+  - {fileID: 5982194544806749586, guid: bec5d3114757d004ba8877232c7725f7, type: 3}
+  poolSize: 15
 --- !u!114 &9008047272946549646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawn
   enemyPool: {fileID: 2466060322840077293}
   player: {fileID: 0}
-  spawnRadius: 20
+  spawnRadius: 7
   baseSpawnInterval: 1
   minSpawnInterval: 0.2
   difficultyGrowthRate: 0.05
