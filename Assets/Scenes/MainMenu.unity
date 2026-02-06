@@ -233,7 +233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 325440641546151924, guid: 6d22f2aca8669dd4682c06dbb01d9167, type: 3}
+  m_Sprite: {fileID: 2568624650156363504, guid: bec7bd05caa7fdf4d9a9e1386ea78e95, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1115,7 +1115,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6693663534156647905, guid: f5c18dd44df7a364eafdd1f9ddd65936, type: 3}
+  m_Sprite: {fileID: -3020259915797703503, guid: ba2133e134169d34b83841d700c348c3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1340,7 +1340,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 9135129249832865222, guid: b5bd0ef5244b67f4f804b2fa0ebb4c8d, type: 3}
+  m_Sprite: {fileID: -8079564680869100213, guid: 79bd05f50df773b4a89ca93883184876, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5545167831949128296, guid: 0ab261f6d37ed3c44bc69676646b9dc2, type: 3}
+  m_Sprite: {fileID: 6038138489983065330, guid: 75af9c5933ee13e47a08dc1b569b121e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1530,8 +1530,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -252.6, y: -277.9}
-  m_SizeDelta: {x: 160, y: 126.7892}
+  m_AnchoredPosition: {x: -266, y: -285}
+  m_SizeDelta: {x: 160, y: 35.6661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2133949381
 MonoBehaviour:
@@ -1609,7 +1609,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d083672284ae81546a15cd91ce5c6354, type: 3}
+  m_Sprite: {fileID: 4211717512570438342, guid: 74a03a0fc613c4741867bb064e04af88, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1642,6 +1642,10 @@ PrefabInstance:
     - target: {fileID: 7836176553791299895, guid: 8b477ff7ed5f04e4991362b7a098c5d7, type: 3}
       propertyPath: m_Name
       value: FadeOut
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836176553791299895, guid: 8b477ff7ed5f04e4991362b7a098c5d7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8855501861928765005, guid: 8b477ff7ed5f04e4991362b7a098c5d7, type: 3}
       propertyPath: m_Pivot.x
