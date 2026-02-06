@@ -1343,7 +1343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1201244114842472607, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
       propertyPath: maxHealth
-      value: 2000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1300753409658806456, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
       propertyPath: m_SortingOrder
@@ -8147,6 +8147,10 @@ PrefabInstance:
     - target: {fileID: 6732162211972513440, guid: 5310886b520823144bb6472af4f4814f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741727233821123506, guid: 5310886b520823144bb6472af4f4814f, type: 3}
+      propertyPath: m_text
+      value: PERDISTE
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

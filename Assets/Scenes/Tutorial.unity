@@ -1510,7 +1510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5545167831949128296, guid: 0ab261f6d37ed3c44bc69676646b9dc2, type: 3}
+  m_Sprite: {fileID: 6038138489983065330, guid: 75af9c5933ee13e47a08dc1b569b121e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1660,6 +1660,10 @@ PrefabInstance:
     - target: {fileID: 7836176553791299895, guid: 8b477ff7ed5f04e4991362b7a098c5d7, type: 3}
       propertyPath: m_Name
       value: FadeOut
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836176553791299895, guid: 8b477ff7ed5f04e4991362b7a098c5d7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8855501861928765005, guid: 8b477ff7ed5f04e4991362b7a098c5d7, type: 3}
       propertyPath: m_Pivot.x
