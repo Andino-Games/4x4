@@ -5,5 +5,10 @@ public class BetterSpeed : MonoBehaviour
   public void ActivateBetterSpeed()
   {
       EventManager.Instance.BetterSpeedActivated();
+  }
+
+    private void OnEnable()
+    {
+        ActivateBetterSpeed();
     }
 }

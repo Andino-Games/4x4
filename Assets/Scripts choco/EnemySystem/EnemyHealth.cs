@@ -3,20 +3,20 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public float maxHealth;
+    public float baseMaxHealth;
     public float currentHealth;
     public GameObject dropItemPrefab;
 
     private void OnEnable()
     {
-       
-        currentHealth = maxHealth;
+        float multiplier = EnemyDifficulty.Instance.GetHealthMultiplier();
+        currentHealth = baseMaxHealth * multiplier;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        currentHealth = Mathf.Clamp(currentHealth, 0, currentHealth);
         Debug.Log("Player Health: " + currentHealth);
         if (currentHealth <= 0)
         {

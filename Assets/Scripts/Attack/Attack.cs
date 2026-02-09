@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace Attack
 {
@@ -7,6 +8,8 @@ namespace Attack
         [Header("Stats Base")] 
         public int damage;
         public float fireRate;
+
+        public float damageMultiplier = 0.8f;
 
         protected float NextAttackTime;
         
@@ -17,6 +20,12 @@ namespace Attack
                 ExecuteAttack();
                 NextAttackTime = Time.time + fireRate;
             } 
+        }
+
+        protected float CalculateDamage()
+        {
+            float difficulty = EnemyDifficulty.Instance.difficulty;
+            return damage * Mathf.Pow(difficulty,damageMultiplier);
         }
         public abstract void ExecuteAttack();
     }

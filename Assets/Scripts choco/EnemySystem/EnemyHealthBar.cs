@@ -35,7 +35,7 @@ public class EnemyHealthBar : MonoBehaviour
         }
 
         // Proteger contra división por cero y asegurar punto flotante.
-        float maxHealth = enemyHealth.maxHealth;
+        float maxHealth = enemyHealth.baseMaxHealth;
         float currentHealth = enemyHealth.currentHealth;
 
         float normalized = 0f;
