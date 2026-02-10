@@ -330,6 +330,9 @@ MonoBehaviour:
   maxHealth: 20
   currentHealth: 0
   dropItemPrefab: {fileID: 5825600151974820404, guid: cf691b7cdcfb8174c840fb474eb06ac4, type: 3}
+  healthyColor: {r: 1, g: 1, b: 1, a: 1}
+  infectedColor: {r: 0.2, g: 0.8, b: 0.20628695, a: 1}
+  dieEffect: {fileID: 7892971410151300988, guid: 8a6dbd2db600b4b4a87a3b3bd9beb1fe, type: 3}
 --- !u!114 &1606185561793589899
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ namespace Attack.AttackType
         {
             if (other.CompareTag("Enemy"))
             {
-                other.GetComponent<EnemyHealth>().TakeDamage(damage);
+                other.GetComponent<EnemyHealth>().TakeDamage(damage, transform.position);
                 Debug.Log("Enemy hit with basic attack for " + damage + " damage.");
             }
         }
