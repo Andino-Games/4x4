@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: a9b31728b1a9b21439479f708e87f207
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3026363701882872058
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_0
+  - first:
+      213: 4146268191240252035
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_1
+  - first:
+      213: -5498916772015678702
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_2
+  - first:
+      213: -2267337644646769950
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_3
+  - first:
+      213: 1361423848528607432
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_4
+  - first:
+      213: -29960168623767144
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_5
+  - first:
+      213: 8156226927851345699
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_6
+  - first:
+      213: -3176727528973053288
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_7
+  - first:
+      213: -3937258542579093286
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_8
+  - first:
+      213: -4262993494072307102
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_9
+  - first:
+      213: 3861992818725675635
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_10
+  - first:
+      213: -37045300048175948
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_11
+  - first:
+      213: 7920361291564413875
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_12
+  - first:
+      213: 641214968620703712
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_13
+  - first:
+      213: -3741567600705541196
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_14
+  - first:
+      213: -3709384324563702452
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_15
+  - first:
+      213: 3227153824430339275
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_16
+  - first:
+      213: 1374205773088378736
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_17
+  - first:
+      213: 729447503673569136
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_18
+  - first:
+      213: 3487866575599677600
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_19
+  - first:
+      213: -4887750038442811470
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_20
+  - first:
+      213: 4232771881426938013
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_21
+  - first:
+      213: 6405867844964219873
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_22
+  - first:
+      213: 141004091500791130
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_23
+  - first:
+      213: 5735248468901071810
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_24
+  - first:
+      213: -4132402647155089783
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_25
+  - first:
+      213: 986393609869555446
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_26
+  - first:
+      213: 4219342171101956568
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_27
+  - first:
+      213: -5225130987834208414
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_28
+  - first:
+      213: -3167640547143505320
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_29
+  - first:
+      213: 7787095496610149864
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_30
+  - first:
+      213: 4756913537862594414
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_31
+  - first:
+      213: -6708797818984871206
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_32
+  - first:
+      213: 2383402316532907711
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_33
+  - first:
+      213: -5240263869274835789
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_34
+  - first:
+      213: 1662727598257240805
+    second: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 0
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 350
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af06dd3a0cdcff920800000000000000
+      internalID: 3026363701882872058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 351
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a606ab3f08a8930800000000000000
+      internalID: 4146268191240252035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 352
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b5192945cefa3b0800000000000000
+      internalID: -5498916772015678702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 333
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea55f0dc6cc880e0800000000000000
+      internalID: -2267337644646769950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 34
+        width: 309
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8fa40f6cfb4e210800000000000000
+      internalID: 1361423848528607432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 333
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89105c7a26f859ff0800000000000000
+      internalID: -29960168623767144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 336
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3271e066d2db03170800000000000000
+      internalID: 8156226927851345699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 333
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8925b57b42ff9e3d0800000000000000
+      internalID: -3176727528973053288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 331
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad073bc473c0c59c0800000000000000
+      internalID: -3937258542579093286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 239
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262d402e00ec6d4c0800000000000000
+      internalID: -4262993494072307102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 221
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372e045c10e889530800000000000000
+      internalID: 3861992818725675635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 196
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bcd702fe736c7ff0800000000000000
+      internalID: -37045300048175948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 188
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3737c71a6caed60800000000000000
+      internalID: 7920361291564413875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 172
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efdc4ddd9d06e800800000000000000
+      internalID: 641214968620703712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 148
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bbe5d04718431cc0800000000000000
+      internalID: -3741567600705541196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 110
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d6af62c9e958cc0800000000000000
+      internalID: -3709384324563702452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 70
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4b6bc1e4729cc20800000000000000
+      internalID: 3227153824430339275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 38
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f4939aed8221310800000000000000
+      internalID: 1374205773088378736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 21
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f22cac3a48f1a00800000000000000
+      internalID: 729447503673569136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0b396cb24676030800000000000000
+      internalID: 3487866575599677600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 35
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bfd6b78c393b2cb0800000000000000
+      internalID: -4887750038442811470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 38
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d98e6b79993ddba30800000000000000
+      internalID: 4232771881426938013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb70318dd636e850800000000000000
+      internalID: 6405867844964219873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 25
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5508c16972f4f100800000000000000
+      internalID: 141004091500791130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 25
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb83778812b79f40800000000000000
+      internalID: 5735248468901071810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 32
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98edf63dfa1c6a6c0800000000000000
+      internalID: -4132402647155089783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 9
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f67df413cf50bd00800000000000000
+      internalID: 986393609869555446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 25
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d98b5e795d1e8a30800000000000000
+      internalID: 4219342171101956568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 18
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f814dec0b9c77b0800000000000000
+      internalID: -5225130987834208414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 13
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a236b84b74a04d0800000000000000
+      internalID: -3167640547143505320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 8
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5fd7ba812511c60800000000000000
+      internalID: 7787095496610149864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6feb83d8a3f30240800000000000000
+      internalID: 4756913537862594414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 6
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adacd79adef85e2a0800000000000000
+      internalID: -6708797818984871206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe79c177cb831120800000000000000
+      internalID: 2383402316532907711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b43f8666c7d647b0800000000000000
+      internalID: -5240263869274835789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea7c5ce0f1331710800000000000000
+      internalID: 1662727598257240805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_0: 3026363701882872058
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_1: 4146268191240252035
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_10: 3861992818725675635
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_11: -37045300048175948
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_12: 7920361291564413875
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_13: 641214968620703712
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_14: -3741567600705541196
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_15: -3709384324563702452
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_16: 3227153824430339275
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_17: 1374205773088378736
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_18: 729447503673569136
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_19: 3487866575599677600
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_2: -5498916772015678702
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_20: -4887750038442811470
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_21: 4232771881426938013
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_22: 6405867844964219873
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_23: 141004091500791130
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_24: 5735248468901071810
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_25: -4132402647155089783
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_26: 986393609869555446
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_27: 4219342171101956568
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_28: -5225130987834208414
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_29: -3167640547143505320
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_3: -2267337644646769950
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_30: 7787095496610149864
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_31: 4756913537862594414
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_32: -6708797818984871206
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_33: 2383402316532907711
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_34: -5240263869274835789
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_35: 1662727598257240805
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_4: 1361423848528607432
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_5: -29960168623767144
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_6: 8156226927851345699
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_7: -3176727528973053288
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_8: -3937258542579093286
+      pngtree-black-paint-splash-element-png-image_4155603-removebg-preview_9: -4262993494072307102
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
