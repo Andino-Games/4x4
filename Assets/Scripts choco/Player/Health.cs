@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
         EventManager.Instance.OnMaxHealthIncreased -= IncreasedHealth;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         // Flash effect using Shader property
         if (sprite.material.HasProperty("_FlashAmount"))

@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    public int damage = 10;
+    public float baseDamage = 10f;
+    public float damage = 10f;
     public float damageInterval = 3f;
     public float damageTimer = 0f;
     private bool playerInRange = false;
@@ -17,9 +18,9 @@ public class EnemyDamage : MonoBehaviour
                 
                 if (EventManager.Instance != null)
                 {
-                    EventManager.Instance.DamageTaken(damage);
-                    Debug.Log($"Enemy dealt {damage} damage to Player (time={Time.time}).");
-                    Debug.Log($"TakeDamage frame {Time.frameCount}");
+                    float scaled = GetScaledDamage();
+                    EventManager.Instance.DamageTaken(scaled);
+                    Debug.Log("Player takes " + scaled + " damage from enemy.");
                     damageTimer = 0f;
                 }
                 else
@@ -28,6 +29,13 @@ public class EnemyDamage : MonoBehaviour
                 }
             }
         }
+    }
+
+    public float GetScaledDamage()
+    {
+        float difficulty = EnemyDifficulty.Instance.GetDifficulty();
+        damage = baseDamage * Mathf.Pow(difficulty, 0.8f);
+        return damage;
     }
 
 

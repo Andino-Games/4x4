@@ -5,7 +5,7 @@ using UnityEngine;
 public class EventManager : MonoBehaviour
 {
     public static EventManager Instance;
-    public event Action<int> OnDamageTaken;
+    public event Action<float> OnDamageTaken;
     public event Action<GameObject> OnEnemyDied;
     public event Action OnPlayerDied;
 
@@ -20,15 +20,14 @@ public class EventManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
+         }
         else
         {
             Destroy(gameObject);
         }
     }
     
-    public void DamageTaken(int damage)
+    public void DamageTaken(float damage)
     {
         OnDamageTaken?.Invoke(damage);
     }

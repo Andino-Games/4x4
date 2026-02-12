@@ -9,7 +9,7 @@ namespace Attack
         public int damage;
         public float fireRate;
 
-        public float damageMultiplier = 0.8f;
+        public float damageMultiplier = 0.85f;
 
         protected float NextAttackTime;
         
@@ -24,7 +24,7 @@ namespace Attack
 
         protected float CalculateDamage()
         {
-            float difficulty = EnemyDifficulty.Instance.difficulty;
+            float difficulty = EnemyDifficulty.Instance.GetDifficulty();
             return damage * Mathf.Pow(difficulty,damageMultiplier);
         }
         public abstract void ExecuteAttack();

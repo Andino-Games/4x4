@@ -10,13 +10,13 @@ public class EnemySpawn : MonoBehaviour
     public float spawnRadius = 20f;
     public float baseSpawnInterval = 1f;
     public float minSpawnInterval = 0.2f;
-
+    private float difficultyScaling = 1f;
     private float spawnTimer = 0f;
 
     private void Update()
     {
-        float difficulty = EnemyDifficulty.Instance.GetSpawnMultiplier();
-        float currentInterval = Mathf.Max(minSpawnInterval, baseSpawnInterval / difficulty );
+        float difficulty = 1+ (EnemyDifficulty.Instance.GetDifficulty() -1f) * difficultyScaling;
+        float currentInterval = Mathf.Max(minSpawnInterval, baseSpawnInterval / Mathf.Pow(difficulty,1.2f));
         spawnTimer += Time.deltaTime;
         if (spawnTimer >= currentInterval)
         {

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EnemyDifficulty : MonoBehaviour
@@ -5,12 +6,9 @@ public class EnemyDifficulty : MonoBehaviour
     public static EnemyDifficulty Instance;
 
     [Header("Difficulty Settings")]
-    public float difficulty = 1f;
-    public float growthRate = 0.05f;
-
-    [Header("Scaling Multipliers")]
-    public float healthMultiplierPerDifficulty = 0.3f;
-    public float spawnMultiplierPerDifficulty = 0.5f;
+    [SerializeField]private float difficulty = 1f;
+    public float growthRate = 0.01f;
+    public float maxDifficulty = 5f;   
 
     private void Awake()
     {
@@ -22,16 +20,13 @@ public class EnemyDifficulty : MonoBehaviour
 
     private void Update()
     {
-        difficulty += growthRate * Time.deltaTime;
+        float gameTime = Time.timeSinceLevelLoad;
+        difficulty = 1f +  Mathf.Pow(gameTime * growthRate, 1.2f);
     }
 
-    public float GetHealthMultiplier()
+    public float GetDifficulty()
     {
-        return 1f + difficulty * healthMultiplierPerDifficulty;
+        return difficulty;
     }
 
-    public float GetSpawnMultiplier()
-    {
-        return 1f + difficulty * spawnMultiplierPerDifficulty;
-    }
 }

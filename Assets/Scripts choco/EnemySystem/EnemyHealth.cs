@@ -4,9 +4,14 @@ using DG.Tweening;
 
 public class EnemyHealth : MonoBehaviour
 {
+    [Header("Health Settings")]
+    public float baseMaxHealth = 5f;
     public float maxHealth;
     public float currentHealth;
+    private float difficultyScaling = 1f;
     public GameObject dropItemPrefab;
+
+
     [Header("Colores de Infección")]
     public Color healthyColor = Color.white; 
     public Color infectedColor = new Color(0.4f, 0.8f, 0.2f);
@@ -24,8 +29,12 @@ public class EnemyHealth : MonoBehaviour
     {
         sprite = GetComponent<SpriteRenderer>();
         sprite.color = healthyColor;
-        currentHealth = maxHealth;
         transform.localScale = originalScale;
+
+        float difficulty = 1+ (EnemyDifficulty.Instance.GetDifficulty() -1f) * difficultyScaling;
+        maxHealth = baseMaxHealth * Mathf.Pow(difficulty,1f);
+        currentHealth = maxHealth;
+        Debug.Log("Enemy Spawned with Health: " + currentHealth);
     }
 
     public void TakeDamage(int damage, Vector3 sourcePos)
@@ -33,7 +42,7 @@ public class EnemyHealth : MonoBehaviour
         // 1. Apply Damage first
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-
+///////////////////////DOTween/////////////////////////
         // 2. Calculate Infection Color based on NEW health
         float infectionPercent = 1 - (currentHealth / maxHealth);
         Color currentColor = Color.Lerp(healthyColor, infectedColor, infectionPercent);
@@ -47,8 +56,8 @@ public class EnemyHealth : MonoBehaviour
         // 4. Knockback (PunchPosition needs direction)
         Vector3 dir = (transform.position - sourcePos).normalized;
         transform.DOPunchPosition(dir * 0.2f, 0.2f, 10, 1);
-        
-        Debug.Log("Enemy Health: " + currentHealth);
+        //////////////////////////////////////////////////
+       
         if (currentHealth <= 0)
         {
             EnemyDie();
@@ -65,8 +74,6 @@ public class EnemyHealth : MonoBehaviour
              EventManager.Instance.EnemyDie(gameObject); // Return to pool (which deactivates it)
         }); 
         Instantiate(dieEffect, transform.position, Quaternion.identity);
-
-        Debug.Log("Enemy has died.");
         SpawnDrop();
     }
 
