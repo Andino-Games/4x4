@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
             
             case GameState.LevelUp:
                 Time.timeScale = 0;
+                abilityManager.StartAnim();
+                Debug.Log("animation played");
                 abilityManager.ShowAbilities();
                 Debug.Log(currentState);
                 break;

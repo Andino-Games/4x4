@@ -9,8 +9,9 @@ namespace Abilities
         public List<AbilityData> abilitiesObtained;
         public Transform playerTransform;
 
-        [Header("UI References")] 
+        [Header("UI References")]
         public GameObject abilitiesPanel;
+        public Animator panelAnimation;
         public AbilityButton[] UIButtons;
         public UnityEngine.UI.Image[] obtainedAbilityIcons;
 
@@ -24,9 +25,8 @@ namespace Abilities
                 GameManager.Instance.ChangeState(GameState.Playing);
                 return;
             }
-            
             abilitiesPanel.SetActive(true);
-
+            
             // Filter out abilities that have already been obtained
             List<AbilityData> options = new List<AbilityData>();
             foreach (var ability in poolAbilities)
@@ -89,9 +89,18 @@ namespace Abilities
             {
                 Debug.LogError("AbilityManager: 'playerTransform' no está asignado en el Inspector.");
             }
-            
+
             abilitiesPanel.SetActive(false);
             GameManager.Instance.ChangeState(GameState.Playing);
+        }
+
+        public void StartAnim()
+        { 
+            
+            if (panelAnimation != null)
+            {
+                panelAnimation.SetTrigger("Open");
+            }
         }
     }
 }

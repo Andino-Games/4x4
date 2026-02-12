@@ -438,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1c413bb6f367b47af5a4875aab930d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
-  damage: 10
+  damage: 1
   damageInterval: 3
   damageTimer: 0
 --- !u!114 &442939244534717234
@@ -453,7 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0144f9d3c9fdc8446b3dffe10d81c921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  maxHealth: 500
+  maxHealth: 10
   currentHealth: 0
   dropItemPrefab: {fileID: 5825600151974820404, guid: cf691b7cdcfb8174c840fb474eb06ac4, type: 3}
   healthyColor: {r: 1, g: 1, b: 1, a: 1}
