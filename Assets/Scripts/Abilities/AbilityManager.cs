@@ -60,6 +60,7 @@ namespace Abilities
         {
             Debug.Log($"AbilityManager: Seleccionando habilidad: {ability.abilityName}");
             abilitiesObtained.Add(ability);
+            EventManager.Instance.MaxHealthIncreased();
 
             // Update HUD Icons
             int index = abilitiesObtained.Count - 1;

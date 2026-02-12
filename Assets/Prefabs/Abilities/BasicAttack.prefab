@@ -151,9 +151,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247b5c2d7ac84d9694c6391a9e79756d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Attack.AttackType.BasicAttack
-  damage: 10
+  damage: 5
   fireRate: 0
-  rotationdSpeed: 270
+  scaling: 0.15
+  rotationdSpeed: 250
 --- !u!1 &8945986762766502198
 GameObject:
   m_ObjectHideFlags: 0

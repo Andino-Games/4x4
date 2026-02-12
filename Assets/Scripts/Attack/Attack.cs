@@ -8,9 +8,8 @@ namespace Attack
         [Header("Stats Base")] 
         public int damage;
         public float fireRate;
-
-        public float damageMultiplier = 0.85f;
-
+        public float scaling;
+       
         protected float NextAttackTime;
         
         public virtual void Update()
@@ -18,14 +17,24 @@ namespace Attack
             if (Time.time >= NextAttackTime)
             {
                 ExecuteAttack();
-                NextAttackTime = Time.time + fireRate;
+                NextAttackTime = Time.time + CalculateFireRate();
             } 
         }
 
         protected float CalculateDamage()
         {
             float difficulty = EnemyDifficulty.Instance.GetDifficulty();
-            return damage * Mathf.Pow(difficulty,damageMultiplier);
+            float factor = 1f + (difficulty - 1f) * scaling;
+            factor = Mathf.Min(factor,2f);
+            return damage * factor;
+        }
+
+        protected float CalculateFireRate()
+        {
+            float difficulty = EnemyDifficulty.Instance.GetDifficulty();
+            float scaledRate = fireRate / (1f + (difficulty - 1f) * scaling);
+
+            return Mathf.Clamp(scaledRate, 0.15f, fireRate);
         }
         public abstract void ExecuteAttack();
     }

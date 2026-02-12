@@ -8,7 +8,7 @@ public class EnemyHealth : MonoBehaviour
     public float baseMaxHealth = 5f;
     public float maxHealth;
     public float currentHealth;
-    private float difficultyScaling = 1f;
+    private float difficultyScaling = 0.4f;
     public GameObject dropItemPrefab;
 
 
@@ -31,13 +31,13 @@ public class EnemyHealth : MonoBehaviour
         sprite.color = healthyColor;
         transform.localScale = originalScale;
 
-        float difficulty = 1+ (EnemyDifficulty.Instance.GetDifficulty() -1f) * difficultyScaling;
+        float difficulty = 1f+ (EnemyDifficulty.Instance.GetDifficulty() -1f) * difficultyScaling;
         maxHealth = baseMaxHealth * Mathf.Pow(difficulty,1f);
         currentHealth = maxHealth;
         Debug.Log("Enemy Spawned with Health: " + currentHealth);
     }
 
-    public void TakeDamage(int damage, Vector3 sourcePos)
+    public void TakeDamage(float damage, Vector3 sourcePos)
     {
         // 1. Apply Damage first
         currentHealth -= damage;

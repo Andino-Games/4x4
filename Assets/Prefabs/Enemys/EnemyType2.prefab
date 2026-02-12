@@ -375,7 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyChase
   player: {fileID: 0}
-  speed: 4
+  speed: 3.5
 --- !u!114 &2483085471209658866
 MonoBehaviour:
   m_ObjectHideFlags: 0

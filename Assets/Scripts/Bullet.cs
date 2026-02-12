@@ -5,9 +5,9 @@ using UnityEngine.Pool;
 public class Bullet : MonoBehaviour
 {
         public float speed = 10f;
-        public float lifetime = 3f;
-    public int damage = 10;
-    private float _timer;
+        public float lifetime = 1f;
+        public int damage = 5;
+        private float _timer;
         private IObjectPool<Bullet>  _myPool;
         
         public void SetPool(IObjectPool<Bullet> pool) => _myPool = pool;
@@ -34,9 +34,20 @@ public class Bullet : MonoBehaviour
         {
                 if (other.CompareTag("Enemy"))
                 {
-                    other.GetComponent<EnemyHealth>().TakeDamage(damage, transform.position);
-                    Debug.Log("Enemy hit with basic attack for " + damage + " damage.");
-            Deactivate();
+                    float finalDamage = CalculateDamage();
+                    other.GetComponent<EnemyHealth>().TakeDamage(finalDamage, transform.position);
+                    Debug.Log("Enemy hit with basic attack for " + finalDamage + " damage.");
+                    Deactivate();
                 }
         }
+
+    #region calculateDamage
+        public float CalculateDamage()
+        {
+                float difficulty = EnemyDifficulty.Instance.GetDifficulty();
+                float factor = 1f + (difficulty - 1f) * 0.2f;
+                factor = Mathf.Min(factor, 2f);
+                return damage * factor;
+    }
+    #endregion
 }

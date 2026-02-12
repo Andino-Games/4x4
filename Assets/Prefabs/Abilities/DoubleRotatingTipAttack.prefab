@@ -105,9 +105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebfc3a030e0b46d8a6169094f6819dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Attack.AttackType.DoubleRotatingTipAttack
-  damage: 10
+  damage: 5
   fireRate: 0
-  rotationdSpeed: 270
+  scaling: 0.15
+  rotationdSpeed: 250
 --- !u!61 &6231167315280734894
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -4973,7 +4973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &14807952
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5573,8 +5573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDifficulty
   difficulty: 1
   growthRate: 0.05
-  healthMultiplierPerDifficulty: 0.3
-  spawnMultiplierPerDifficulty: 0.5
+  maxDifficulty: 5
 --- !u!1 &354910998
 GameObject:
   m_ObjectHideFlags: 0
@@ -5830,6 +5829,14 @@ PrefabInstance:
     - target: {fileID: 1711133504087143412, guid: 5d367819e00190649bf7ac3d8a51dcca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8505472443370522659, guid: 5d367819e00190649bf7ac3d8a51dcca, type: 3}
+      propertyPath: scaling
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8505472443370522659, guid: 5d367819e00190649bf7ac3d8a51dcca, type: 3}
+      propertyPath: rotationdSpeed
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 8945986762766502198, guid: 5d367819e00190649bf7ac3d8a51dcca, type: 3}
       propertyPath: m_Name
@@ -6237,7 +6244,7 @@ PrefabInstance:
       objectReference: {fileID: 30629284}
     - target: {fileID: 1201244114842472607, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
       propertyPath: maxHealth
-      value: 500
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1201244114842472607, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
       propertyPath: mainCamera
@@ -6382,6 +6389,30 @@ PrefabInstance:
     - target: {fileID: 8922698756776885800, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
       propertyPath: m_Color.r
       value: 0.33081776
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129920102012804936, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
+      propertyPath: m_Radius
+      value: 1.2888769
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129920102012804936, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.07313475
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129920102012804936, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.11447333
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174644863231396149, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
+      propertyPath: m_Radius
+      value: 0.68648434
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174644863231396149, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.03537464
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174644863231396149, guid: 91984ed9758e246e68d36718426dd8da, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.04126227
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -7497,7 +7528,7 @@ PrefabInstance:
       objectReference: {fileID: 1514585829}
     - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
       propertyPath: poolAbilities.Array.size
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
       propertyPath: 'poolAbilities.Array.data[0]'

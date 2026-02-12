@@ -6,6 +6,7 @@ public class EnemyDamage : MonoBehaviour
     public float damage = 10f;
     public float damageInterval = 3f;
     public float damageTimer = 0f;
+    private float difficultyScaling = 0.2f;
     private bool playerInRange = false;
 
     private void Update()
@@ -34,8 +35,9 @@ public class EnemyDamage : MonoBehaviour
     public float GetScaledDamage()
     {
         float difficulty = EnemyDifficulty.Instance.GetDifficulty();
-        damage = baseDamage * Mathf.Pow(difficulty, 0.8f);
-        return damage;
+        float factor = 1f + (difficulty - 1f) * difficultyScaling;
+        factor = Mathf.Min(factor, 2f);
+        return damage * factor;
     }
 
 

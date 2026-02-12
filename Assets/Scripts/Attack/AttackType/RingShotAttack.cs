@@ -9,6 +9,7 @@ namespace Attack.AttackType
         public GameObject bulletPrefab;
         public int bulletCount = 10;
         public float radius = 0.5f;
+        
 
         [Header("Pool Settings")] 
         public int poolDefaultSize = 20;

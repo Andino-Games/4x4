@@ -16,7 +16,7 @@ namespace Attack.AttackType
         {
             if (other.CompareTag("Enemy"))
             {
-
+                float finalDamage = CalculateDamage() * 0.15f; // Double damage for this attack
                 other.GetComponent<EnemyHealth>().TakeDamage(damage, transform.position);
                 Debug.Log("Enemy hit with double rotating attack for " + damage + " damage.");
             }

@@ -106,9 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f624b4350d240df908f46b039e408bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Attack.AttackType.AreaIncreaseAttack
-  damage: 10
+  damage: 5
   fireRate: 0
-  rotationdSpeed: 270
+  scaling: 0.1
+  rotationdSpeed: 250
 --- !u!61 &7562450408413355485
 BoxCollider2D:
   m_ObjectHideFlags: 0
