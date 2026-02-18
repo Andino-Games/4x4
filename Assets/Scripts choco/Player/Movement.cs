@@ -49,7 +49,7 @@ public class Movement : MonoBehaviour
 
     public void ActivateBetterSpeed()
     {
-        speed = 10f;
+        speed = 8f;
     }
 
 

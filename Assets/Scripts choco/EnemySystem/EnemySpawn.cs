@@ -10,7 +10,7 @@ public class EnemySpawn : MonoBehaviour
     public float spawnRadius = 20f;
     public float baseSpawnInterval = 1f;
     public float minSpawnInterval = 0.2f;
-    private float difficultyScaling = 0.8f;
+    [SerializeField]private float difficultyScaling = 0.8f;
     private float spawnTimer = 0f;
 
     private void Update()

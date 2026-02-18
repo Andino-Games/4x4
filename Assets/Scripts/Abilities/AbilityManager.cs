@@ -15,7 +15,8 @@ namespace Abilities
         public AbilityButton[] UIButtons;
         public UnityEngine.UI.Image[] obtainedAbilityIcons;
 
-
+        private const string SPECIAL_ABILITY_KEY = "Area Increased";
+        private readonly string[] ESPICULAS = { "BasicAttack", "DoubleTip", "Area Increased" };
 
         public void ShowAbilities()
         {
@@ -33,6 +34,10 @@ namespace Abilities
             {
                 if (!abilitiesObtained.Contains(ability))
                 {
+                    if(ability.abilityName == SPECIAL_ABILITY_KEY && !HasAbilityObtained("DoubleTip"))
+                    {
+                        continue; // Skip if the special ability is not already obtained
+                    }
                     options.Add(ability);
                 }
             }
@@ -59,6 +64,11 @@ namespace Abilities
         public void SelectAbility(AbilityData ability)
         {
             Debug.Log($"AbilityManager: Seleccionando habilidad: {ability.abilityName}");
+
+            if(ability.abilityName == SPECIAL_ABILITY_KEY)
+            {
+                DisablePreviousHabilities();
+            }
             abilitiesObtained.Add(ability);
             EventManager.Instance.MaxHealthIncreased();
 
@@ -93,6 +103,78 @@ namespace Abilities
 
             abilitiesPanel.SetActive(false);
             GameManager.Instance.ChangeState(GameState.Playing);
+        }
+
+        private bool HasAbilityObtained(string abilityName)
+        {
+            foreach (var ability in abilitiesObtained)
+            {
+                if (ability.abilityName == abilityName)
+                    return true;
+            }
+            return false;
+        }
+
+        private void DisablePreviousHabilities()
+        {
+            if (playerTransform == null || abilitiesObtained.Count == 0)
+                return;
+
+            // Encontrar todas las habilidades de la familia de bastones en abilitiesObtained
+            List<AbilityData> staffAbilitiesToRemove = new List<AbilityData>();
+            List<int> childIndicesToDisable = new List<int>();
+
+            // Buscar habilidades de la familia en abilitiesObtained (excluyendo la que se acaba de agregar)
+            for (int i = 0; i < abilitiesObtained.Count - 1; i++) // -1 para excluir la última agregada
+            {
+                AbilityData ability = abilitiesObtained[i];
+                if (IsStaffAbility(ability.abilityName))
+                {
+                    staffAbilitiesToRemove.Add(ability);
+                }
+            }
+
+            // Si hay habilidades de bastones previas, desactivarlas
+            if (staffAbilitiesToRemove.Count > 0)
+            {
+                // Desactivar los GameObjects correspondientes en playerTransform
+                foreach (var ability in staffAbilitiesToRemove)
+                {
+                    // Buscar el hijo que corresponde a esta habilidad (por nombre)
+                    for (int i = playerTransform.childCount - 1; i >= 0; i--)
+                    {
+                        Transform child = playerTransform.GetChild(i);
+                        if (child.gameObject.name.Contains(ability.abilityName))
+                        {
+                            child.gameObject.SetActive(false);
+                            Debug.Log($"Desactivada instancia de {ability.abilityName}");
+                            break;
+                        }
+                    }
+                }
+
+                // Remover de abilitiesObtained
+                foreach (var ability in staffAbilitiesToRemove)
+                {
+                    abilitiesObtained.Remove(ability);
+                }
+
+                Debug.Log($"Desactivadas {staffAbilitiesToRemove.Count} habilidades de bastones previas.");
+            }
+            else
+            {
+                Debug.Log("No hay habilidades de bastones previas para desactivar.");
+            }
+        }
+
+        private bool IsStaffAbility(string abilityName)
+        {
+            foreach (var staffName in ESPICULAS)
+            {
+                if (abilityName == staffName)
+                    return true;
+            }
+            return false;
         }
 
         public void StartAnim()
