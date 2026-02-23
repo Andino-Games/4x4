@@ -14,6 +14,7 @@ public class EventManager : MonoBehaviour
     public event Action OnMaxHealthIncreased;
     public event Action OnRespawnAvailable;
     public event Action OnBetterSpeedActivated;
+    public event Action OnResetHealth;
 
     private void Awake()
     {
@@ -54,6 +55,11 @@ public class EventManager : MonoBehaviour
     public void BetterSpeedActivated()
     {
         OnBetterSpeedActivated?.Invoke();
+    }
+
+    public void ResetHealth()
+    {
+        OnResetHealth?.Invoke();
     }
 
     #endregion

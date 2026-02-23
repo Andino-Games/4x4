@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Abilities.AbilityData
   abilityName: Doble espicula
   abilityDescription: Duplica el numero de espiculas
-  abilityIcon: {fileID: 6859867057943101888, guid: 70ae0b3196f561442872a809aa89766c, type: 3}
+  abilityIcon: {fileID: -935562341132795627, guid: f163c89dec01fb1489f6a491a8cb4dd3, type: 3}
   abilityPrefab: {fileID: 2007212549432375519, guid: bf07c13670544994f907db952fa3ae9f, type: 3}

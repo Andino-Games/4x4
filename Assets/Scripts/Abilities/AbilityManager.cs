@@ -70,7 +70,7 @@ namespace Abilities
                 DisablePreviousHabilities();
             }
             abilitiesObtained.Add(ability);
-            EventManager.Instance.MaxHealthIncreased();
+            EventManager.Instance.ResetHealth();
 
             // Update HUD Icons
             int index = abilitiesObtained.Count - 1;

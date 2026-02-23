@@ -20,18 +20,24 @@ public class Health : MonoBehaviour
         {
             EventManager.Instance.OnDamageTaken += TakeDamage;
             EventManager.Instance.OnMaxHealthIncreased += IncreasedHealth;
+            EventManager.Instance.OnResetHealth += SetHealth;
         }
         else
         {
             Debug.LogWarning("EventManager.Instance es null en Health OnEnable. No se puede suscribir al evento.");
         }
-        currentHealth = maxHealth;
+        SetHealth();   
         respawn = GetComponent<Respawn>();
     }
     private void OnDisable()
     {
         EventManager.Instance.OnDamageTaken -= TakeDamage;
         EventManager.Instance.OnMaxHealthIncreased -= IncreasedHealth;
+    }
+
+    public void SetHealth()
+    {
+      currentHealth = maxHealth;
     }
 
     public void TakeDamage(float damage)

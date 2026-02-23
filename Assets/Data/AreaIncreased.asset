@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Abilities.AbilityData
   abilityName: Aumento de area
   abilityDescription: "Aumenta el tama\xF1o de las espiculas"
-  abilityIcon: {fileID: -935562341132795627, guid: f163c89dec01fb1489f6a491a8cb4dd3, type: 3}
+  abilityIcon: {fileID: 6859867057943101888, guid: 70ae0b3196f561442872a809aa89766c, type: 3}
   abilityPrefab: {fileID: 7481376262753287007, guid: c5c5cd083aa2e6b479818ceb5b156325, type: 3}
