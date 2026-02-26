@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Attack.AttackType;
 
 namespace Abilities
 {
@@ -85,10 +86,30 @@ namespace Abilities
 
             if (playerTransform != null)
             {
+                // Resetear rotaciones de todos los ataques hijos a su posición original
+                for (int i = 0; i < playerTransform.childCount; i++)
+                {
+                    playerTransform.GetChild(i).localRotation = Quaternion.identity;
+                }
+
                 if (ability.abilityPrefab != null)
                 {
                     GameObject newAttack = Instantiate(ability.abilityPrefab, playerTransform);
                     newAttack.transform.localPosition = Vector3.zero;
+
+                    // Copiar la rotación local del BasicAttack + 90 grados
+                    BasicAttack baseAttack = playerTransform.GetComponentInChildren<BasicAttack>();
+                    if (baseAttack != null)
+                    {
+                        float currentAngleZ = baseAttack.transform.localEulerAngles.z;
+                        float newAngleZ = currentAngleZ + 90f;
+                        newAttack.transform.localRotation = Quaternion.Euler(0, 0, newAngleZ);
+                    }
+                    else
+                    {
+                        // Fallback: alinear a la rotación local del player
+                        newAttack.transform.localRotation = Quaternion.identity;
+                    }
                     Debug.Log($"AbilityManager: Instanciada habilidad {ability.abilityName} en el jugador.");
                 }
                 else

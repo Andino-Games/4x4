@@ -7098,7 +7098,7 @@ PrefabInstance:
       objectReference: {fileID: 1514585829}
     - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
       propertyPath: poolAbilities.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7870505411828235229, guid: b4242ba52912f3a499d83f80436c3557, type: 3}
       propertyPath: 'poolAbilities.Array.data[0]'
