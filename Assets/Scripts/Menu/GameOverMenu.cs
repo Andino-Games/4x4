@@ -5,6 +5,7 @@ public class GameOverMenu : MonoBehaviour
 {
     public Animator anim;
     public FadeOut fadeOut;
+    public int targetIndex; 
     private void OnEnable()
     {
         PlayGameOverAnimation();
@@ -37,14 +38,14 @@ public class GameOverMenu : MonoBehaviour
         if (fadeOut != null)
         {
             Debug.Log("Starting fade out animation");
-            fadeOut.LoadTargetScene(0);
+            fadeOut.LoadTargetScene(targetIndex);
             yield return new WaitForSeconds(1f);
 
         }
         else
         {
             yield return new WaitForSeconds(5f);
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(targetIndex);
         }
     }
 

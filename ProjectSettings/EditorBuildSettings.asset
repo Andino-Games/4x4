@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/escenary.unity
     guid: ce3a93b3ba9b347bfaf34e1e706f71ab
+  - enabled: 1
+    path: Assets/Scenes/ThanksForPlaying.unity
+    guid: 7d08d664a80c2a94380ea5a6a3b54152
   - enabled: 0
     path: Assets/Scenes/ChocoScene.unity
     guid: 4747cf399bf8d5740ae4913b083bf5c0

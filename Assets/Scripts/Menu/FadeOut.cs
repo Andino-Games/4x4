@@ -4,7 +4,7 @@ public class FadeOut : MonoBehaviour
 {
     private int targetSceneIndex = -1;   
     public Animator anim;
-
+    
     private void Start()
     {
         this.gameObject.SetActive(false);
